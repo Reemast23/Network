@@ -1,0 +1,10 @@
+echo "Enter a number:"
+read number
+smallest=${number:0:1}
+for((i=1;i<${#number};i++));do
+dugit=${number:i:1}
+if((number<smallest));then
+smallest=$digit
+fi
+done
+echo "smallest number:$smallest"
